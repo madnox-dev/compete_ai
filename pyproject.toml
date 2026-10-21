@@ -1,0 +1,24 @@
+[project]
+name = "compete-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HariCodez07", email = "harimanoj147@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.6",
+    "langchain-openai>=1.7.2",
+    "openai>=3.36.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+    "tinydb>=4.9.0",
+]
+
+[project.scripts]
+compete-ai = "compete_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
